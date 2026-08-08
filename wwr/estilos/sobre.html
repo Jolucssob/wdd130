@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rafting Emoção - Aventuras Radicais</title>
     <meta name="description"
       content="Rafting em Corredeiras: emoção, prazer, muita adrenalina e saúde">
     <meta name="author" content="José Lucas Sobrinho">
+    <!-- CORREÇÃO: O link do CSS agora está dentro do <head> -->
+    <link rel="stylesheet" href="estilos/css/rafting.css">
 </head>
-<link rel="stylesheet" href="estilos/css/rafting.css">
 
 <body>
     <header>
@@ -20,33 +21,41 @@
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="sobre.html">Sobre Nós</a></li>
                 <li><a href="passeios.html">Passeios</a></li>
-                <li><a href="Fale Conosco">Fale Conosco</a></li>
+                <!-- DICA: Lembre-se de adicionar a extensão do arquivo aqui depois, ex: fale-conosco.html -->
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <div> class="hero">
-            <img src="imagens/..." alt="" width="100">
+        <!-- CORREÇÃO: Sintaxe da classe corrigida para dentro da tag -->
+        <div class="hero">
+            <img src="imagens/hero-bg.jpg" alt="Imagem de destaque" width="100">
             <h1>Rafting Emoção</h1>
             <article>
-                <img src="imagens" alt="........">
+                <img src="imagens/depoimento.jpg" alt="Foto do depoimento">
                 <p>"Lorem ipsum dolor sit amet consectetur... "</p>
             </article>
         </div>
+
         <section>
             <h2>História</h2>
-            <p>Lorem ipsum dolor sit amet consectetur....</p>
+            <p>Lorem ipsum dolor sit amet consectetur...</p>
         </section>
+
         <section>
             <h2>"A aventura está te esperando!"</h2>
         </section>
     </main>
+
     <footer>
-        <nav> class="redes-sociais">
+        <!-- CORREÇÃO: Sintaxe da classe corrigida para dentro da tag -->
+        <nav class="redes-sociais">
             <a href="https://facebook.com">
                 <img src="imagens/facebook.svg" alt="Ícone do facebook">
             </a>
-            <a href="https//linkedin.com">
+            <!-- CORREÇÃO: Adicionado os dois pontos (:) no https:// -->
+            <a href="https://linkedin.com">
                 <img src="imagens/linkedin.svg" alt="Ícone do Linkedin">
             </a>
             <a href="https://instagram.com">
