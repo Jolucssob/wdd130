@@ -4,65 +4,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafting Emoção - Aventuras Radicais</title>
-    <meta name="description"
-      content="Rafting em Corredeiras: emoção, prazer, muita adrenalina e saúde">
-    <meta name="author" content="José Lucas Sobrinho">
-    <!-- CORREÇÃO: O link do CSS agora está dentro do <head> -->
-    <link rel="stylesheet" href="estilos/css/rafting.css">
+    <title>REE - Rafting Energia e Emoção</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <img src="imagens/raftingfoto.jpg" alt="Esta é a nossa marca, emoção e saúde juntas"
-          width="100">
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="passeios.html">Passeios</a></li>
-                <!-- DICA: Lembre-se de adicionar a extensão do arquivo aqui depois, ex: fale-conosco.html -->
-                <li><a href="fale-conosco.html">Fale Conosco</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-placeholder">
+                <span>Logo</span>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Passeios</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- CORREÇÃO: Sintaxe da classe corrigida para dentro da tag -->
-        <div class="hero">
-            <img src="imagens/hero-bg.jpg" alt="Imagem de destaque" width="100">
-            <h1>Rafting Emoção</h1>
-            <article>
-                <img src="imagens/depoimento.jpg" alt="Foto do depoimento">
-                <p>"Lorem ipsum dolor sit amet consectetur... "</p>
-            </article>
+    <!-- 2. Seção Principal (Hero / Nome da Empresa) -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="main-title">Rafting Emoção e Saúde</h1>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p>Bem-vindo à Rafting Emoção e Saúde!Nascemos da paixão pela aventura e do
+                        compromisso com a qualidade
+                        de vida. A Rafting Emoção e Saúde é uma empresa especializada em turismo de
+                        aventura que transforma
+                        a descida de rios em uma jornada completa de bem-estar físico e mental.
+                        Nosso propósito é conectar
+                        você à força da natureza, proporcionando a descarga de adrenalina que o
+                        corpo pede e a tranquilidade
+                        que a mente precisa para aliviar o estresse do dia a dia..</p>
+                    <div class="hero-container">
+                        <div class="hero-content">
+                            <h1>Rafting Emoção e Saúde</h1>
+                            <p>Nascemos da paixão pela aventura e do compromisso com a qualidade de
+                                vida. Transformamos a descida de rios em uma jornada completa de
+                                bem-estar físico e
+                                mental, conectando você
+                                à força da natureza com a descarga de adrenalina que o corpo pede e
+                                a calmaria que a
+                                mente precisa.</p>
+
+                            <p>Com condutores especializados, equipamentos certificados e total
+                                segurança, oferecemos uma estrutura completa com seguro individual,
+                                fotos e lanche
+                                saudável. Seja com a família ou amigos, venha remar conosco e sinta
+                                a verdadeira emoção!
+                            </p>
+                        </div>
+                        <div class="hero-image-placeholder">
+                            <span><img src="./imagens/corredeira-calmaria.jpg"
+                                  alt="Equipe praticando rafting em uma corredeira cercada por natureza"></span>
+                        </div>
+    </section>
+
+    <!-- 3. Sobre a nossa História -->
+
+    <section class="history-section">
+        <div class="container">
+            <h2 class="section-title">História</h2>
+            <div class="history-grid">
+                <div class="history-col">
+                    <p>Rafting Emoção e Saúde nasceu de um sonho compartilhado por apaixonados pelo
+                        esporte outdoor e
+                        profissionais do bem-estar. Percebemos que o contato com as corredeiras ia
+                        muito além da adrenalina:
+                        ele transformava a saúde mental e física dos participantes, funcionando como
+                        uma terapia natural
+                        contra o estresse do dia a dia. Foi unindo essa paixão ao compromisso com a
+                        qualidade de vida que
+                        criamos a nossa empresa. Desde o início de nossa trajetória, nos dedicamos a
+                        transformar o turismo de aventura em uma jornada
+                        segura, acessível e inesquecível para todos. Ao longo dos anos,
+                        aperfeiçoamos nossos roteiros e
+                        consolidamos a segurança como nosso pilar inegociável, investindo em
+                        equipamentos de ponta e no
+                        treinamento rigoroso da nossa equipe de condutores. </p>
+                </div>
+                <div class="history-center-image">
+                    <span><img src="avante.jpg" alt=""></span>
+                </div>
+                <div class="history-col">
+                    <p>Hoje, temos orgulho de conectar centenas de pessoas à força da natureza,
+                        promovendo o trabalho em
+                        equipe, o fortalecimento pessoal e a superação de limites. Seja você um
+                        iniciante ou um aventureiro
+                        experiente, nossa missão continua a mesma: guiar você em uma correnteza de
+                        pura vida, saúde e
+                        emoção.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <section>
-            <h2>História</h2>
-            <p>Lorem ipsum dolor sit amet consectetur...</p>
-        </section>
+    <section class="adventure-section">
+        <div class="container">
+            <h2 class="section-title">A aventura está te esperando!</h2>
+            <div class="adventure-gallery">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-placeholder"><span><img
+                              src="imagens/rafting-emocao.jpg"
+                              alt="A emoção é o que importa"></span>
+                    </div>
+                    <p class="gallery-legend">Primeira Classe</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-placeholder"><span>raftingfoto.jpg</span>
+                    </div>
+                    <p class="gallery-legend">Seguindo em frente</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-placeholder"><span><img src="trabalho-em-equipe.jpg"
+                              alt="o esforço conjunto dá resultado"></span>
+                    </div>
+                    <p class="gallery-legend">Emoção em equipe</p>
+                </div>
+                <!-- Item 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-placeholder"><span>momentos em amigos</span><img
+                          src="momentos.jpg" alt="foto do momento em oração"></div>
+                    <p class="gallery-legend">Construindo Legado</p>
+                </div>
+                <!-- Item 5 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-placeholder"><span><img src="boas-lembrancas.jpg"
+                              alt="fotos inesquecíveis"></span></div>
+                    <p class="gallery-legend">Laços eternos</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>"A aventura está te esperando!"</h2>
-        </section>
-    </main>
+    <!-- 5. Rodapé -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-text">
+                <p>Texto do rodapé e ícones de redes sociais</p>
+            </div>
+            <div class="footer-socials">
+                <div class="social-icon-placeholder">
+                    <a href="LINK_DO_SEU_FACEBOOK" target="_blank">
+                        <span><img src="facebook-square.jpg" alt="Visite nosso Facebook"></span>
+                    </a>
+                </div>
 
-    <footer>
-        <!-- CORREÇÃO: Sintaxe da classe corrigida para dentro da tag -->
-        <nav class="redes-sociais">
-            <a href="https://facebook.com">
-                <img src="imagens/facebook.svg" alt="Ícone do facebook">
-            </a>
-            <!-- CORREÇÃO: Adicionado os dois pontos (:) no https:// -->
-            <a href="https://linkedin.com">
-                <img src="imagens/linkedin.svg" alt="Ícone do Linkedin">
-            </a>
-            <a href="https://instagram.com">
-                <img src="imagens/instagram.svg" alt="Ícone do instagram">
-            </a>
-        </nav>
+                <div class="social-icon-placeholder">
+                    <a href="LINK_DO_SEU_INSTAGRAM" target="_blank">
+                        <span><img src="instagram-square.jpg" alt="Siga-nos no Instagram"></span>
+                    </a>
+                </div>
+
+                <div class="social-icon-placeholder">
+                    <a href="LINK_DO_SEU_LINKEDIN" target="_blank">
+                        <span><img src="Linkedin.jpg" alt="Conecte-se conosco no LinkedIn"></span>
+                    </a>
+                </div>
+            </div>
+
     </footer>
+
 </body>
 
 </html>
