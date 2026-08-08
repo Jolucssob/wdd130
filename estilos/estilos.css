@@ -1,0 +1,42 @@
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    /* Corrigida a sintaxe da opacidade */
+    padding: 1rem;
+    background-color: #eee;
+    /* Fundo cinza claro */
+    color: #333;
+    /* CORRIGIDO: Texto cinza escuro para dar leitura */
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    /* Garante que a imagem se comporte bem com o texto */
+    margin: 0 auto 1rem auto;
+    /* Centraliza a imagem e empurra o texto para baixo */
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    /* Adicionado margem abaixo do parágrafo */
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
