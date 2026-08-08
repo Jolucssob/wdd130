@@ -2,6 +2,11 @@ main {
     max-width: 840px;
 }
 
+h1 {
+    color: #333333;
+    /* Adiciona a cor ao h1 (troque pelo código da sua cor se necessário) */
+}
+
 aside {
     width: 20rem;
     margin: 1rem;
