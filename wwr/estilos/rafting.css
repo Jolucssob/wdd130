@@ -1,4 +1,5 @@
  /* =========================================
+ /* =========================================
    VARIÁVEIS CSS
 ========================================= */
 
@@ -15,7 +16,7 @@
  }
 
  /* =========================================
-
+   RESET UNIVERSAL
 ========================================= */
 
  * {
@@ -36,7 +37,7 @@
  }
 
  /* =========================================
-
+   ELEMENTOS GERAIS
 ========================================= */
 
  img {
@@ -64,6 +65,7 @@
      align-items: center;
 
      background-color: var(--cor-primaria);
+     color: var(--cor-clara);
  }
 
  /* =========================================
@@ -76,7 +78,7 @@
  }
 
  /* =========================================
-   NAVEGAÇÃO
+   NAVEGAÇÃO PRINCIPAL
 ========================================= */
 
  header nav {
@@ -87,10 +89,11 @@
  }
 
  header nav a {
+     padding: 8px 12px;
+
      color: var(--cor-clara);
      text-decoration: none;
      font-weight: bold;
-     padding: 8px 12px;
  }
 
  header nav a:hover {
@@ -108,128 +111,286 @@
  }
 
  /* =========================================
-   HERO
+   SEÇÃO DE CONTATO
 ========================================= */
 
- .hero {
-     position: relative;
-     margin-top: 20px;
- }
-
- .hero > img {
-     width: 100%;
-     height: auto;
- }
-
- /* =========================================
-   TÍTULO SOBRE A IMAGEM
-========================================= */
-
- .hero h1 {
-     position: absolute;
-
-     top: 20px;
-     left: 0;
-
-     width: 100%;
-
-     padding: 16px;
-
-     text-align: center;
-
-     color: var(--cor-clara);
-
-     background-color: rgba(38, 70, 83, 0.8);
- }
-
- /* =========================================
-   ARTICLE SOBRE A IMAGEM
-========================================= */
-
- .hero article {
-     position: absolute;
-
-     bottom: 20px;
-     left: 40px;
-
-     width: 760px;
-
-     padding: 20px;
-
-     background-color: rgba(255, 255, 255, 0.85);
-
-     color: var(--cor-texto);
- }
-
- /* =========================================
-   IMAGEM DO ARTICLE
-========================================= */
-
- .hero article img {
-     float: right;
-
-     width: 125px;
-
-     margin-left: 20px;
- }
-
- /* =========================================
-   SEÇÕES
-========================================= */
-
- section {
+ .contato {
      margin: 30px 0;
      padding: 20px;
  }
 
- section h2 {
+ .contato h1 {
      margin-bottom: 15px;
+
+     text-align: center;
+
+     color: var(--cor-secundaria);
+
+     font-size: 2.5rem;
+ }
+
+ .introducao {
+     max-width: 700px;
+
+     margin: 0 auto 40px;
+
+     text-align: center;
+ }
+
+ /* =========================================
+   EQUIPE
+========================================= */
+
+ .equipe {
+     margin-bottom: 50px;
+ }
+
+ .equipe h2 {
+     margin-bottom: 25px;
 
      text-align: center;
 
      color: var(--cor-secundaria);
  }
 
- section p {
-     margin-bottom: 15px;
+ .equipe-grid {
+     display: grid;
+
+     grid-template-columns: repeat(3, 1fr);
+
+     gap: 25px;
  }
 
- /* =========================================
-   SEGUNDA SEÇÃO
-========================================= */
+ .equipe figure {
+     padding: 15px;
 
- section:nth-of-type(2) {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-     gap: 20px;
+     text-align: center;
+
+     background-color: var(--cor-fundo);
+
+     border-radius: 8px;
  }
 
- section:nth-of-type(2) h2 {
+ .equipe figure img {
      width: 100%;
+     height: 180px;
+
+     object-fit: cover;
+
+     border-radius: 6px;
+ }
+
+ .equipe figcaption {
+     margin-top: 12px;
  }
 
  /* =========================================
-   FIGURES
+   ÁREA PRINCIPAL DE CONTATO
 ========================================= */
 
- figure {
-     width: 140px;
+ .contato-grid {
+     display: grid;
+
+     grid-template-columns: 1fr 1.3fr;
+
+     gap: 40px;
+
+     margin-bottom: 50px;
+ }
+
+ /* =========================================
+   INFORMAÇÕES
+========================================= */
+
+ .informacoes {
+     padding: 25px;
+
+     background-color: var(--cor-fundo);
+
+     border-radius: 8px;
+ }
+
+ .informacoes h2 {
+     margin-bottom: 20px;
+
+     color: var(--cor-secundaria);
+ }
+
+ .informacoes p {
+     margin-bottom: 20px;
+ }
+
+ /* =========================================
+   FORMULÁRIO
+========================================= */
+
+ .formulario {
+     padding: 25px;
+
+     background-color: var(--cor-fundo);
+
+     border-radius: 8px;
+ }
+
+ .formulario h2 {
+     margin-bottom: 20px;
+
+     color: var(--cor-secundaria);
+ }
+
+ form {
+     display: flex;
+
+     flex-direction: column;
+
+     gap: 10px;
+ }
+
+ form label {
+     font-weight: bold;
+ }
+
+ /* =========================================
+   INPUTS E TEXTAREA
+========================================= */
+
+ input[type="text"],
+ input[type="email"],
+ textarea {
+     width: 100%;
+
+     padding: 10px;
+
+     font-family: var(--fonte-texto);
+
+     border: 1px solid var(--cor-texto);
+
+     border-radius: 4px;
+
+     background-color: var(--cor-clara);
+ }
+
+ textarea {
+     resize: vertical;
+ }
+
+ /* =========================================
+   FIELDSET
+========================================= */
+
+ fieldset {
+     margin: 15px 0;
+
+     padding: 15px;
+
+     border: 1px solid var(--cor-texto);
+
+     border-radius: 4px;
+ }
+
+ legend {
+     padding: 0 6px;
+
+     font-weight: bold;
+ }
+
+ /* =========================================
+   RADIO BUTTONS
+========================================= */
+
+ .opcao-radio {
+     display: flex;
+
+     align-items: center;
+
+     gap: 8px;
+
+     margin: 8px 0;
+ }
+
+ .opcao-radio label {
+     font-weight: normal;
+ }
+
+ /* =========================================
+   NEWSLETTER
+========================================= */
+
+ .newsletter {
+     display: flex;
+
+     align-items: center;
+
+     gap: 8px;
+
+     margin: 15px 0;
+ }
+
+ .newsletter label {
+     font-weight: normal;
+ }
+
+ /* =========================================
+   BOTÃO
+========================================= */
+
+ button {
+     padding: 12px 20px;
+
+     border: none;
+
+     border-radius: 5px;
+
+     background-color: var(--cor-secundaria);
+
+     color: var(--cor-clara);
+
+     font-family: var(--fonte-texto);
+
+     font-size: 1rem;
+
+     font-weight: bold;
+
+     cursor: pointer;
+ }
+
+ button:hover {
+     background-color: var(--cor-primaria);
+ }
+
+ /* =========================================
+   FOCO - ACESSIBILIDADE
+========================================= */
+
+ a:focus,
+ input:focus,
+ textarea:focus,
+ button:focus {
+     outline: 3px solid var(--cor-destaque);
+     outline-offset: 2px;
+ }
+
+ /* =========================================
+   MAPA
+========================================= */
+
+ .localizacao {
+     margin-top: 40px;
 
      text-align: center;
  }
 
- figure img {
-     width: 140px;
-     height: 100px;
+ .localizacao h2 {
+     margin-bottom: 20px;
 
-     object-fit: cover;
+     color: var(--cor-secundaria);
  }
 
- figcaption {
-     margin-top: 8px;
+ .localizacao iframe {
+     width: 100%;
+     max-width: 800px;
 
-     font-size: 0.9rem;
+     border: 0;
  }
 
  /* =========================================
@@ -244,7 +405,9 @@
      padding: 20px;
 
      display: flex;
+
      justify-content: space-between;
+
      align-items: center;
 
      background-color: var(--cor-primaria);
@@ -252,20 +415,27 @@
      color: var(--cor-clara);
  }
 
+ footer p {
+     color: var(--cor-clara);
+ }
+
  /* =========================================
    REDES SOCIAIS
 ========================================= */
 
- .socialmedia {
+ .redes-sociais {
      display: flex;
+
+     align-items: center;
+
      gap: 15px;
  }
 
- .socialmedia a {
+ .redes-sociais a {
      text-decoration: none;
  }
 
- .socialmedia img {
+ .redes-sociais img {
      width: 40px;
      height: 40px;
 
@@ -284,8 +454,40 @@
          width: 95%;
      }
 
-     .hero article {
-         width: 90%;
-         left: 5%;
+     header {
+         grid-template-columns: 120px 1fr;
+     }
+
+     .contato-grid {
+         grid-template-columns: 1fr;
+     }
+
+     .equipe-grid {
+         grid-template-columns: 1fr;
+     }
+ }
+
+ @media (max-width: 650px) {
+
+     header {
+         display: flex;
+
+         flex-direction: column;
+
+         gap: 20px;
+     }
+
+     header nav {
+         flex-direction: column;
+
+         gap: 5px;
+     }
+
+     footer {
+         flex-direction: column;
+
+         gap: 20px;
+
+         text-align: center;
      }
  }

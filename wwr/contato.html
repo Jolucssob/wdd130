@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre Nós | Rafting Emoção e Saúde</title>
+    <title>Fale Conosco | Rafting Emoção e Saúde</title>
 
     <meta name="description"
-      content="Conheça a Rafting Emoção e Saúde, nossa história, propósito e experiências de aventura em contato com a natureza.">
+      content="Entre em contato com a Rafting Emoção e Saúde para informações sobre passeios, reservas, segurança e aventuras de rafting.">
 
     <meta name="author" content="José Lucas Sobrinho">
 
@@ -33,498 +33,241 @@
 
     <main>
 
-        <div class="hero">
+        <section class="contato">
 
-            <img src="imagens/hero-rafting.jpg"
-              alt="Grupo praticando rafting em um rio cercado pela natureza">
+            <h1>Fale Conosco</h1>
 
-            <h1>Rafting Emoção e Saúde</h1>
-
-            <article>
-
-                <img src="imagens/felicidade-cliente.jpg"
-                  alt="Cliente feliz após uma experiência de rafting">
-
-                <p>
-                    Nosso propósito é conectar você à força da natureza,
-                    proporcionando a descarga de adrenalina que o corpo pede
-                    e a tranquilidade que a mente precisa para aliviar o
-                    estresse do dia a dia. Nosso lema é viver a emoção,
-                    sempre sendo conduzido pelas águas da vida.
-                </p>
-
-            </article>
-
-        </div>
-
-
-        <section>
-
-            <h2>História</h2>
-
-            <p>
-                Bem-vindo à Rafting Emoção e Saúde! Nascemos da paixão pela
-                aventura e do compromisso com a qualidade de vida. Somos uma
-                empresa especializada em turismo de aventura que transforma
-                a descida de rios em uma jornada completa de bem-estar físico
-                e mental.
+            <p class="introducao">
+                Estamos prontos para ajudar você a planejar sua próxima
+                aventura. Entre em contato conosco para tirar dúvidas sobre
+                passeios, reservas, horários e segurança.
             </p>
+
+
+            <div class="equipe">
+
+                <h2>Conheça Nossa Equipe</h2>
+
+                <div class="equipe-grid">
+
+                    <figure>
+
+                        <img src="imagens/funcionarios.jpg"
+                          alt="Integrante da equipe responsável pelos passeios de rafting">
+
+                        <figcaption>
+                            <strong>João Corredeiras</strong>
+                            <br>
+                            Guia de Rafting
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure>
+
+                        <img src="imagens/funcionarios.jpg"
+                          alt="Integrante da equipe responsável pela segurança dos participantes">
+
+                        <figcaption>
+                            <strong>Maria Saúde</strong>
+                            <br>
+                            Coordenadora de Segurança
+                        </figcaption>
+
+                    </figure>
+
+
+                    <figure>
+
+                        <img src="imagens/funcionarios.jpg"
+                          alt="Integrante da equipe responsável pelo atendimento e pelas reservas">
+
+                        <figcaption>
+                            <strong>Rafa Reserva</strong>
+                            <br>
+                            Atendimento e Reservas
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+
+            <div class="contato-grid">
+
+                <div class="informacoes">
+
+                    <h2>Entre em Contato</h2>
+
+                    <p>
+                        Tem dúvidas sobre nossos passeios, horários ou níveis
+                        de dificuldade? Fale conosco e planeje sua próxima
+                        aventura.
+                    </p>
+
+                    <p>
+                        <strong>Endereço:</strong><br>
+                        Avenida das Corredeiras, 1000<br>
+                        Salvador, Bahia
+                    </p>
+
+                    <p>
+                        <strong>Telefone:</strong><br>
+                        (71) 99999-9999
+                    </p>
+
+                    <p>
+                        <strong>E-mail:</strong><br>
+                        contato@raftingemocao.com
+                    </p>
+
+                </div>
+
+
+                <div class="formulario">
+
+                    <h2>Envie sua Mensagem</h2>
+
+                    <form action="#" method="post">
+
+                        <label for="nome">
+                            Nome:
+                        </label>
+
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome"
+                          required>
+
+
+                        <label for="email">
+                            E-mail:
+                        </label>
+
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail"
+                          required>
+
+
+                        <fieldset>
+
+                            <legend>
+                                Finalidade da mensagem:
+                            </legend>
+
+
+                            <div class="opcao-radio">
+
+                                <input type="radio" id="consulta" name="finalidade"
+                                  value="consulta-geral" required>
+
+                                <label for="consulta">
+                                    Consulta Geral
+                                </label>
+
+                            </div>
+
+
+                            <div class="opcao-radio">
+
+                                <input type="radio" id="reserva" name="finalidade" value="reserva">
+
+                                <label for="reserva">
+                                    Pergunta sobre Reserva
+                                </label>
+
+                            </div>
+
+
+                            <div class="opcao-radio">
+
+                                <input type="radio" id="sugestao" name="finalidade"
+                                  value="sugestao">
+
+                                <label for="sugestao">
+                                    Sugestão para o Site
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <label for="mensagem">
+                            Mensagem:
+                        </label>
+
+                        <textarea id="mensagem" name="mensagem" rows="7"
+                          placeholder="Digite sua mensagem aqui" required></textarea>
+
+
+                        <div class="newsletter">
+
+                            <input type="checkbox" id="newsletter" name="newsletter">
+
+                            <label for="newsletter">
+                                Quero receber a newsletter mensal
+                            </label>
+
+                        </div>
+
+
+                        <button type="submit">
+                            Enviar minha mensagem
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <div class="localizacao">
+
+                <h2>Nossa Localização</h2>
+
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d74060.72077767998!2d-38.084791838913084!3d-12.691403046021074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1786413859623!5m2!1spt-BR!2sbr"
+                  width="600" height="350" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  title="Localização da Rafting Emoção e Saúde">
+                </iframe>
+
+            </div>
 
         </section>
 
+    </main>
 
-        <section>
 
-            <h2>A aventura está esperando por você!</h2>
+    <footer>
 
-            <figure>
+        <p>
+            &copy; 2026 Rafting Emoção e Saúde | José Lucas Sobrinho
+        </p>
 
-                <img src="imagens/rafting1.jpg" alt="Equipe praticando rafting em águas rápidas">
+        <nav class="redes-sociais">
 
-                <figcaption>
-                    Emoção e aventura durante a descida do rio.
-                </figcaption>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/facebook-square.jpg"
+                  alt="Visite a Rafting Emoção e Saúde no Facebook">
+            </a>
 
-            </figure>
 
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/instagram-square.jpg"
+                  alt="Siga a Rafting Emoção e Saúde no Instagram">
+            </a>
 
-            <figure>
 
-                <img src="imagens/rafting2.jpg"
-                  alt="Grupo se preparando para iniciar uma atividade de rafting">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/linkedin.jpg" alt="Conheça a Rafting Emoção e Saúde no LinkedIn">
+            </a>
 
-                <figcaption>
-                    Preparação e segurança antes da aventura.
-                </figcaption>
+        </nav>
 
-            </figure>
-
-
-            <figure>
-
-                <img src="imagens/rafting3.jpg" alt="Passeio de rafting em meio à natureza">
-
-                <figcaption>
-                    Contato direto com a natureza.
-                </figcaption>
-
-            </figure>
-
-
-            <figure>
-
-                <img src="imagens/rafting4.jpg"
-                  alt="Participantes remando juntos durante o rafting">
-
-                <figcaption>
-                    Trabalho em equipe e muita diversão.
-                </figcaption>
-
-            </figure>
-
-
-            <figure>
-
-                <img src="imagens/rafting5.jpg"
-                  alt="Grupo comemorando após uma aventura de rafting">
-
-                <figcaption>
-                    Momentos inesquecíveis depois da aventura.
-                </figcaption>
-
-                <main>
-
-
-                    <!-- =========================
-             FALE CONOSCO
-        ========================== -->
-
-                    <section class="contact-section">
-
-                        <div class="container">
-
-
-                            <!-- Título-->
-
-                            <h1 class="section-title">
-                                Fale Conosco
-                            </h1>
-
-
-                            <!-- =========================
-                     NOSSA EQUIPE
-                ========================== -->
-
-                            <div class="team-section">
-
-                                <h2>
-                                    Conheça Nossa Equipe
-                                </h2>
-
-
-                                <div class="team-grid">
-
-
-                                    <!-- Funcionário 1 -->
-
-                                    <figure class="team-member">
-
-                                        <img src="imagens/funcionarios.jpg"
-                                          alt="João das Corredeiras de Rafting">
-
-                                        <figcaption>
-
-                                            <strong>
-                                                João Corredeiras
-                                            </strong>
-
-                                            <br>
-
-                                            Guia de Rafting
-
-                                        </figcaption>
-
-                                    </figure>
-
-
-                                    <!-- Funcionário 2 -->
-
-                                    <figure class="team-member">
-
-                                        <img src="imagens/funcionarios.jpg"
-                                          alt="Maria Saúde, Coordenadora de Segurança">
-
-                                        <figcaption>
-
-                                            <strong>
-                                                Maria Saúde
-                                            </strong>
-
-                                            <br>
-
-                                            Coordenadora de Segurança
-
-                                        </figcaption>
-
-                                    </figure>
-
-
-                                    <!-- Funcionário 3 -->
-
-                                    <figure class="team-member">
-
-                                        <img src="imagens/funcionarios.jpg"
-                                          alt="RafaReservas, Atendimento e Reservas">
-
-                                        <figcaption>
-
-                                            <strong>
-                                                Rafa Reserva
-                                            </strong>
-
-                                            <br>
-
-                                            Atendimento e Reservas
-
-                                        </figcaption>
-
-                                    </figure>
-
-
-                                </div>
-
-                            </div>
-
-
-                            <!-- =========================
-                     ÁREA PRINCIPAL DE CONTATO
-                ========================== -->
-
-                            <div class="contact-grid">
-
-
-                                <!-- =========================
-                         INFORMAÇÕES DE CONTATO
-                    ========================== -->
-
-                                <div class="contact-info">
-
-                                    <h2>
-                                        Entre em Contato
-                                    </h2>
-
-
-                                    <p>
-                                        Tem dúvidas sobre nossos passeios,
-                                        horários ou níveis de dificuldade?
-                                        Fale conosco e planeje sua próxima
-                                        aventura.
-                                    </p>
-
-
-                                    <p>
-                                        <strong>Endereço:</strong>
-                                        <br>
-
-                                        Avenida das Corredeiras, 1000
-                                        <br>
-
-                                        Salvador, Bahia
-                                    </p>
-
-
-                                    <p>
-                                        <strong>Telefone:</strong>
-                                        <br>
-
-                                        (71) 99999-9999
-                                    </p>
-
-
-                                    <p>
-                                        <strong>E-mail:</strong>
-                                        <br>
-
-                                        contato@raftingemocao.com
-                                    </p>
-
-                                </div>
-
-
-                                <!-- =========================
-                         FORMULÁRIO
-                    ========================== -->
-
-                                <div class="contact-form">
-
-                                    <h2>
-                                        Envie sua Mensagem
-                                    </h2>
-
-
-                                    <form action="#" method="post">
-
-
-                                        <!-- Nome -->
-
-                                        <label for="name">
-                                            Nome:
-                                        </label>
-
-                                        <input type="text" id="name" name="name"
-                                          placeholder="Digite seu nome" required>
-
-
-                                        <!-- E-mail -->
-
-                                        <label for="email">
-                                            E-mail:
-                                        </label>
-
-                                        <input type="email" id="email" name="email"
-                                          placeholder="Digite seu e-mail" required>
-
-
-                                        <!-- =========================
-                             
-                            ========================== -->
-
-                                        <fieldset class="purpose-group">
-
-                                            <legend>
-                                                Finalidade da mensagem:
-                                            </legend>
-
-
-                                            <!-- Consulta Geral -->
-
-                                            <div class="radio-option">
-
-                                                <input type="radio" id="general" name="purpose"
-                                                  value="consulta-geral" required>
-
-                                                <label for="general">
-                                                    Consulta Geral
-                                                </label>
-
-                                            </div>
-
-
-                                            <!-- Reserva -->
-
-                                            <div class="radio-option">
-
-                                                <input type="radio" id="reservation" name="purpose"
-                                                  value="pergunta-reserva">
-
-                                                <label for="reservation">
-                                                    Pergunta sobre Reserva
-                                                </label>
-
-                                            </div>
-
-
-                                            <!-- Sugestão -->
-
-                                            <div class="radio-option">
-
-                                                <input type="radio" id="website" name="purpose"
-                                                  value="sugestao-site">
-
-                                                <label for="website">
-                                                    Sugestão de Site
-                                                </label>
-
-                                            </div>
-
-                                        </fieldset>
-
-
-                                        ========================== -->
-
-                                        <label for="message">
-                                            Mensagem:
-                                        </label>
-
-
-                                        <textarea id="message" name="message" rows="7"
-                                          placeholder="Digite sua mensagem aqui..."
-                                          required></textarea>
-
-
-                                        ========================== -->
-
-                                        <div class="newsletter-option">
-
-                                            <input type="checkbox" id="newsletter"
-                                              name="newsletter">
-
-
-                                            <label for="newsletter">
-                                                Quero receber a newsletter mensal
-                                            </label>
-
-                                        </div>
-
-
-                                        <!-- =========================
-                                 BOTÃO
-                            ========================== -->
-
-                                        <button type="submit">
-
-                                            Enviar Mensagem
-
-                                        </button>
-
-
-                                    </form>
-
-                                </div>
-
-
-                                <!-- =========================
-                         Colocando no google map
-                    ========================== -->
-
-                                <div class="contact-map">
-
-                                    <h2>
-                                        Nossa Localização
-                                    </h2>
-
-
-                                    <iframe
-                                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d74060.72077767998!2d-38.084791838913084!3d-12.691403046021074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1786413859623!5m2!1spt-BR!2sbr"
-                                      width="600" height="350" style="border:0;" allowfullscreen=""
-                                      loading="lazy"
-                                      referrerpolicy="strict-origin-when-cross-origin"
-                                      title="Localização da Rafting Emoção e Saúde">
-                                    </iframe>
-
-                                </div>
-
-
-                            </div>
-
-                        </div>
-
-                    </section>
-
-                </main>
-                <nav>
-
-                </nav>
-
-
-                <!-- =========================
-         RODAPÉ
-    ========================== -->
-
-                <footer class="site-footer">
-
-                    <div class="container footer-container">
-
-
-                        <!-- Texto -->
-
-                        <div class="footer-text">
-
-                            <p>
-                                Rafting Emoção e Saúde -
-                                Descarregue a adrenalina e alimente a alma.
-                            </p>
-
-                            <p>
-                                &copy; 2026 Rafting Emoção e Saúde |
-                                José Sobrinho
-                            </p>
-
-                        </div>
-
-
-                        <!-- Redes sociais -->
-
-                        <nav class="footer-socials">
-
-
-                            <!-- Facebook -->
-
-                            <a href="https://facebook.com" target="_blank"
-                              rel="noopener noreferrer">
-
-                                <img src="imagens/facebook-square.jpg" alt="Visite nosso Facebook">
-
-                            </a>
-
-
-                            <!-- Instagram -->
-
-                            <a href="https://instagram.com" target="_blank"
-                              rel="noopener noreferrer">
-
-                                <img src="imagens/instagram-square.jpg" alt="Siga-nos no Instagram">
-
-                            </a>
-
-
-                            <!-- LinkedIn -->
-
-                            <a href="https://linkedin.com" target="_blank"
-                              rel="noopener noreferrer">
-
-                                <img src="imagens/Linkedin .jpg"
-                                  alt="Conecte-se conosco no LinkedIn">
-
-                            </a>
-
-
-                        </nav>
-
-                    </div>
-
-                </footer>
-
+    </footer>
 
 </body>
 
