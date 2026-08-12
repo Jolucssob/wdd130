@@ -1,15 +1,15 @@
- /* =========================================
- /* =========================================
-   VARIÁVEIS CSS
-========================================= */
-
- :root {
+ //* =========================================
+ VARIÁVEIS CSS=========================================*/:root {
      --cor-primaria: #1f5f7a;
      --cor-secundaria: #055a05;
      --cor-texto: #264653;
      --cor-clara: #ffffff;
      --cor-fundo: #f4f4f4;
      --cor-destaque: #e9c46a;
+
+     --cor-tabela: #872f2f;
+     --cor-celula: #b8c0cc;
+     --cor-botao-agende: #75a9cf;
 
      --fonte-titulo: Georgia, "Times New Roman", serif;
      --fonte-texto: Arial, Helvetica, sans-serif;
@@ -47,7 +47,8 @@
  }
 
  h1,
- h2 {
+ h2,
+ h3 {
      font-family: var(--fonte-titulo);
  }
 
@@ -74,31 +75,53 @@
 
  header > img {
      width: 100px;
-     height: auto;
+     height: 100px;
+
+     object-fit: cover;
+
+     border-radius: 5px;
  }
 
  /* =========================================
-   NAVEGAÇÃO PRINCIPAL
+   NAVEGAÇÃO
 ========================================= */
 
  header nav {
      display: flex;
      justify-content: flex-end;
      align-items: center;
-     gap: 20px;
+
+     gap: 15px;
  }
 
  header nav a {
      padding: 8px 12px;
 
      color: var(--cor-clara);
+
      text-decoration: none;
+
      font-weight: bold;
+
+     border-radius: 4px;
  }
 
  header nav a:hover {
      background-color: var(--cor-clara);
+
      color: var(--cor-primaria);
+ }
+
+ /* =========================================
+   FOCO PARA ACESSIBILIDADE
+========================================= */
+
+ a:focus,
+ button:focus,
+ input:focus,
+ textarea:focus {
+     outline: 3px solid var(--cor-destaque);
+     outline-offset: 3px;
  }
 
  /* =========================================
@@ -107,53 +130,69 @@
 
  main {
      width: 840px;
+
      margin: 0 auto;
  }
 
  /* =========================================
-   SEÇÃO DE CONTATO
+   INTRODUÇÃO DA PÁGINA DE PASSEIOS
 ========================================= */
 
- .contato {
+ .passeios-intro {
      margin: 30px 0;
-     padding: 20px;
- }
 
- .contato h1 {
-     margin-bottom: 15px;
+     padding: 20px;
 
      text-align: center;
+ }
+
+ .passeios-intro h1 {
+     margin-bottom: 15px;
 
      color: var(--cor-secundaria);
 
      font-size: 2.5rem;
  }
 
- .introducao {
+ .passeios-intro p {
      max-width: 700px;
 
-     margin: 0 auto 40px;
+     margin: 0 auto 25px;
 
-     text-align: center;
+     font-size: 1.05rem;
+ }
+
+ .passeios-intro > img {
+     width: 100%;
+
+     max-height: 400px;
+
+     object-fit: cover;
+
+     border-radius: 8px;
  }
 
  /* =========================================
-   EQUIPE
+   SEÇÃO DOS PASSEIOS
 ========================================= */
 
- .equipe {
-     margin-bottom: 50px;
+ .passeios {
+     margin: 40px 0;
  }
 
- .equipe h2 {
-     margin-bottom: 25px;
+ .passeios > h2 {
+     margin-bottom: 30px;
 
      text-align: center;
 
      color: var(--cor-secundaria);
  }
 
- .equipe-grid {
+ /* =========================================
+   GRID DOS PASSEIOS
+========================================= */
+
+ .passeios-grid {
      display: grid;
 
      grid-template-columns: repeat(3, 1fr);
@@ -161,236 +200,270 @@
      gap: 25px;
  }
 
- .equipe figure {
-     padding: 15px;
+ /* =========================================
+   CARDS
+========================================= */
 
-     text-align: center;
+ .passeio-card {
+     padding: 18px;
 
      background-color: var(--cor-fundo);
 
      border-radius: 8px;
  }
 
- .equipe figure img {
+ .passeio-card h3 {
+     margin-bottom: 15px;
+
+     text-align: center;
+
+     color: var(--cor-primaria);
+
+     font-size: 1.3rem;
+ }
+
+ .passeio-card p {
+     margin-bottom: 14px;
+
+     text-align: left;
+ }
+
+ /* =========================================
+   IMAGENS DOS PASSEIOS
+========================================= */
+
+ .passeio-imagens {
+     display: grid;
+
+     grid-template-columns: 1fr;
+
+     gap: 10px;
+
+     margin-bottom: 15px;
+ }
+
+ .passeio-imagens img {
      width: 100%;
-     height: 180px;
+
+     height: 170px;
 
      object-fit: cover;
 
      border-radius: 6px;
  }
 
- .equipe figcaption {
-     margin-top: 12px;
- }
-
  /* =========================================
-   ÁREA PRINCIPAL DE CONTATO
+   TABELA DE VALORES
 ========================================= */
 
- .contato-grid {
-     display: grid;
+ .tabela-valores {
+     margin: 50px 0;
 
-     grid-template-columns: 1fr 1.3fr;
+     padding: 40px 30px;
 
-     gap: 40px;
+     text-align: center;
 
-     margin-bottom: 50px;
- }
-
- /* =========================================
-   INFORMAÇÕES
-========================================= */
-
- .informacoes {
-     padding: 25px;
-
-     background-color: var(--cor-fundo);
+     background-color: var(--cor-tabela);
 
      border-radius: 8px;
  }
 
- .informacoes h2 {
-     margin-bottom: 20px;
+ .tabela-valores h2 {
+     margin-bottom: 10px;
 
-     color: var(--cor-secundaria);
+     color: var(--cor-clara);
+
+     font-size: 2.5rem;
  }
 
- .informacoes p {
-     margin-bottom: 20px;
- }
+ .tabela-valores > p {
+     max-width: 650px;
 
- /* =========================================
-   FORMULÁRIO
-========================================= */
+     margin: 0 auto 25px;
 
- .formulario {
-     padding: 25px;
-
-     background-color: var(--cor-fundo);
-
-     border-radius: 8px;
- }
-
- .formulario h2 {
-     margin-bottom: 20px;
-
-     color: var(--cor-secundaria);
- }
-
- form {
-     display: flex;
-
-     flex-direction: column;
-
-     gap: 10px;
- }
-
- form label {
-     font-weight: bold;
+     color: var(--cor-clara);
  }
 
  /* =========================================
-   INPUTS E TEXTAREA
+   CONTAINER DA TABELA
 ========================================= */
 
- input[type="text"],
- input[type="email"],
- textarea {
+ .tabela-container {
      width: 100%;
 
-     padding: 10px;
+     margin-bottom: 30px;
 
-     font-family: var(--fonte-texto);
-
-     border: 1px solid var(--cor-texto);
-
-     border-radius: 4px;
-
-     background-color: var(--cor-clara);
- }
-
- textarea {
-     resize: vertical;
+     overflow-x: auto;
  }
 
  /* =========================================
-   FIELDSET
+   TABLE
 ========================================= */
 
- fieldset {
-     margin: 15px 0;
+ .tabela-valores table {
+     width: 100%;
 
-     padding: 15px;
+     border-collapse: separate;
 
-     border: 1px solid var(--cor-texto);
+     border-spacing: 0 12px;
 
-     border-radius: 4px;
+     background-color: transparent;
  }
 
- legend {
-     padding: 0 6px;
+ /* =========================================
+   CAPTION
+========================================= */
+
+ .tabela-valores caption {
+     margin-bottom: 15px;
+
+     color: var(--cor-clara);
+
+     font-weight: bold;
+
+     font-size: 1rem;
+ }
+
+ /* =========================================
+   CABEÇALHO DA TABELA
+========================================= */
+
+ .tabela-valores th {
+     padding: 12px;
+
+     background-color: var(--cor-clara);
+
+     color: var(--cor-texto);
+
+     text-align: center;
 
      font-weight: bold;
  }
 
  /* =========================================
-   RADIO BUTTONS
+   CÉLULAS DA TABELA
 ========================================= */
 
- .opcao-radio {
-     display: flex;
+ .tabela-valores td {
+     padding: 20px 12px;
 
-     align-items: center;
+     background-color: var(--cor-celula);
 
-     gap: 8px;
+     color: #000000;
 
-     margin: 8px 0;
- }
-
- .opcao-radio label {
-     font-weight: normal;
+     text-align: center;
  }
 
  /* =========================================
-   NEWSLETTER
+   ARREDONDAMENTO DA TABELA
 ========================================= */
 
- .newsletter {
-     display: flex;
-
-     align-items: center;
-
-     gap: 8px;
-
-     margin: 15px 0;
+ .tabela-valores th:first-child,
+ .tabela-valores td:first-child {
+     border-radius: 6px 0 0 6px;
  }
 
- .newsletter label {
-     font-weight: normal;
+ .tabela-valores th:last-child,
+ .tabela-valores td:last-child {
+     border-radius: 0 6px 6px 0;
  }
 
  /* =========================================
-   BOTÃO
+   DESTAQUE DOS PREÇOS
 ========================================= */
 
- button {
-     padding: 12px 20px;
+ .tabela-valores tbody td:last-child {
+     font-weight: bold;
 
-     border: none;
+     font-size: 1.05rem;
+ }
 
-     border-radius: 5px;
+ /* =========================================
+   BOTÃO AGENDE
+========================================= */
+
+ .botao-agende {
+     display: inline-block;
+
+     padding: 12px 25px;
+
+     background-color: var(--cor-botao-agende);
+
+     color: var(--cor-clara);
+
+     text-decoration: none;
+
+     text-transform: uppercase;
+
+     font-weight: bold;
+
+     border-radius: 25px;
+ }
+
+ .botao-agende:hover {
+     background-color: var(--cor-clara);
+
+     color: var(--cor-tabela);
+ }
+
+ /* =========================================
+   CHAMADA PARA CONTATO
+========================================= */
+
+ .chamada-contato {
+     margin: 50px 0;
+
+     padding: 40px 30px;
+
+     text-align: center;
+
+     background-color: var(--cor-primaria);
+
+     color: var(--cor-clara);
+
+     border-radius: 8px;
+ }
+
+ .chamada-contato h2 {
+     margin-bottom: 15px;
+
+     color: var(--cor-clara);
+ }
+
+ .chamada-contato p {
+     max-width: 650px;
+
+     margin: 0 auto 15px;
+ }
+
+ .chamada-contato p:last-of-type {
+     margin-bottom: 25px;
+ }
+
+ /* =========================================
+   BOTÃO DE CONTATO
+========================================= */
+
+ .botao-contato {
+     display: inline-block;
+
+     padding: 12px 24px;
 
      background-color: var(--cor-secundaria);
 
      color: var(--cor-clara);
 
-     font-family: var(--fonte-texto);
-
-     font-size: 1rem;
+     text-decoration: none;
 
      font-weight: bold;
 
-     cursor: pointer;
+     border-radius: 5px;
  }
 
- button:hover {
-     background-color: var(--cor-primaria);
- }
+ .botao-contato:hover {
+     background-color: var(--cor-destaque);
 
- /* =========================================
-   FOCO - ACESSIBILIDADE
-========================================= */
-
- a:focus,
- input:focus,
- textarea:focus,
- button:focus {
-     outline: 3px solid var(--cor-destaque);
-     outline-offset: 2px;
- }
-
- /* =========================================
-   MAPA
-========================================= */
-
- .localizacao {
-     margin-top: 40px;
-
-     text-align: center;
- }
-
- .localizacao h2 {
-     margin-bottom: 20px;
-
-     color: var(--cor-secundaria);
- }
-
- .localizacao iframe {
-     width: 100%;
-     max-width: 800px;
-
-     border: 0;
+     color: var(--cor-texto);
  }
 
  /* =========================================
@@ -410,6 +483,8 @@
 
      align-items: center;
 
+     gap: 20px;
+
      background-color: var(--cor-primaria);
 
      color: var(--cor-clara);
@@ -423,7 +498,7 @@
    REDES SOCIAIS
 ========================================= */
 
- .redes-sociais {
+ .socialmedia {
      display: flex;
 
      align-items: center;
@@ -431,19 +506,24 @@
      gap: 15px;
  }
 
- .redes-sociais a {
+ .socialmedia a {
+     display: block;
+
      text-decoration: none;
  }
 
- .redes-sociais img {
+ .socialmedia img {
      width: 40px;
+
      height: 40px;
 
      object-fit: cover;
+
+     border-radius: 4px;
  }
 
  /* =========================================
-   RESPONSIVIDADE
+   RESPONSIVIDADE - TABLET
 ========================================= */
 
  @media (max-width: 900px) {
@@ -458,14 +538,21 @@
          grid-template-columns: 120px 1fr;
      }
 
-     .contato-grid {
+     .passeios-grid {
          grid-template-columns: 1fr;
      }
 
-     .equipe-grid {
-         grid-template-columns: 1fr;
+     .passeio-card {
+         max-width: 600px;
+
+         margin: 0 auto;
      }
+
  }
+
+ /* =========================================
+   RESPONSIVIDADE - CELULAR
+========================================= */
 
  @media (max-width: 650px) {
 
@@ -483,11 +570,29 @@
          gap: 5px;
      }
 
+     .passeios-intro h1 {
+         font-size: 2rem;
+     }
+
+     .tabela-valores {
+         padding: 30px 15px;
+     }
+
+     .tabela-valores h2 {
+         font-size: 2rem;
+     }
+
+     .tabela-valores th,
+     .tabela-valores td {
+         padding: 12px 8px;
+
+         font-size: 0.9rem;
+     }
+
      footer {
          flex-direction: column;
 
-         gap: 20px;
-
          text-align: center;
      }
+
  }
