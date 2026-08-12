@@ -1,0 +1,291 @@
+ /* =========================================
+   VARIÁVEIS CSS
+========================================= */
+
+ :root {
+     --cor-primaria: #1f5f7a;
+     --cor-secundaria: #055a05;
+     --cor-texto: #264653;
+     --cor-clara: #ffffff;
+     --cor-fundo: #f4f4f4;
+     --cor-destaque: #e9c46a;
+
+     --fonte-titulo: Georgia, "Times New Roman", serif;
+     --fonte-texto: Arial, Helvetica, sans-serif;
+ }
+
+ /* =========================================
+
+========================================= */
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* =========================================
+   BODY
+========================================= */
+
+ body {
+     font-family: var(--fonte-texto);
+     color: var(--cor-texto);
+     line-height: 1.6;
+     background-color: var(--cor-clara);
+ }
+
+ /* =========================================
+
+========================================= */
+
+ img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+ }
+
+ h1,
+ h2 {
+     font-family: var(--fonte-titulo);
+ }
+
+ /* =========================================
+   HEADER
+========================================= */
+
+ header {
+     width: 840px;
+     margin: 0 auto;
+     padding: 15px 30px;
+
+     display: grid;
+     grid-template-columns: 150px 1fr;
+     align-items: center;
+
+     background-color: var(--cor-primaria);
+ }
+
+ /* =========================================
+   LOGO
+========================================= */
+
+ header > img {
+     width: 100px;
+     height: auto;
+ }
+
+ /* =========================================
+   NAVEGAÇÃO
+========================================= */
+
+ header nav {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     gap: 20px;
+ }
+
+ header nav a {
+     color: var(--cor-clara);
+     text-decoration: none;
+     font-weight: bold;
+     padding: 8px 12px;
+ }
+
+ header nav a:hover {
+     background-color: var(--cor-clara);
+     color: var(--cor-primaria);
+ }
+
+ /* =========================================
+   MAIN
+========================================= */
+
+ main {
+     width: 840px;
+     margin: 0 auto;
+ }
+
+ /* =========================================
+   HERO
+========================================= */
+
+ .hero {
+     position: relative;
+     margin-top: 20px;
+ }
+
+ .hero > img {
+     width: 100%;
+     height: auto;
+ }
+
+ /* =========================================
+   TÍTULO SOBRE A IMAGEM
+========================================= */
+
+ .hero h1 {
+     position: absolute;
+
+     top: 20px;
+     left: 0;
+
+     width: 100%;
+
+     padding: 16px;
+
+     text-align: center;
+
+     color: var(--cor-clara);
+
+     background-color: rgba(38, 70, 83, 0.8);
+ }
+
+ /* =========================================
+   ARTICLE SOBRE A IMAGEM
+========================================= */
+
+ .hero article {
+     position: absolute;
+
+     bottom: 20px;
+     left: 40px;
+
+     width: 760px;
+
+     padding: 20px;
+
+     background-color: rgba(255, 255, 255, 0.85);
+
+     color: var(--cor-texto);
+ }
+
+ /* =========================================
+   IMAGEM DO ARTICLE
+========================================= */
+
+ .hero article img {
+     float: right;
+
+     width: 125px;
+
+     margin-left: 20px;
+ }
+
+ /* =========================================
+   SEÇÕES
+========================================= */
+
+ section {
+     margin: 30px 0;
+     padding: 20px;
+ }
+
+ section h2 {
+     margin-bottom: 15px;
+
+     text-align: center;
+
+     color: var(--cor-secundaria);
+ }
+
+ section p {
+     margin-bottom: 15px;
+ }
+
+ /* =========================================
+   SEGUNDA SEÇÃO
+========================================= */
+
+ section:nth-of-type(2) {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 20px;
+ }
+
+ section:nth-of-type(2) h2 {
+     width: 100%;
+ }
+
+ /* =========================================
+   FIGURES
+========================================= */
+
+ figure {
+     width: 140px;
+
+     text-align: center;
+ }
+
+ figure img {
+     width: 140px;
+     height: 100px;
+
+     object-fit: cover;
+ }
+
+ figcaption {
+     margin-top: 8px;
+
+     font-size: 0.9rem;
+ }
+
+ /* =========================================
+   FOOTER
+========================================= */
+
+ footer {
+     width: 840px;
+
+     margin: 30px auto 0;
+
+     padding: 20px;
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+     background-color: var(--cor-primaria);
+
+     color: var(--cor-clara);
+ }
+
+ /* =========================================
+   REDES SOCIAIS
+========================================= */
+
+ .socialmedia {
+     display: flex;
+     gap: 15px;
+ }
+
+ .socialmedia a {
+     text-decoration: none;
+ }
+
+ .socialmedia img {
+     width: 40px;
+     height: 40px;
+
+     object-fit: cover;
+ }
+
+ /* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+ @media (max-width: 900px) {
+
+     header,
+     main,
+     footer {
+         width: 95%;
+     }
+
+     .hero article {
+         width: 90%;
+         left: 5%;
+     }
+ }
