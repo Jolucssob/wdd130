@@ -24,9 +24,25 @@ aside img {
     width: 200px;
     height: auto;
     display: block;
-    /* Garante que a imagem se comporte bem com o texto */
+
     margin: 0 auto 1rem auto;
-    /* Centraliza a imagem e empurra o texto para baixo */
+}
+
+.hero {
+    background-image: url("hero-rafting.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main img {
