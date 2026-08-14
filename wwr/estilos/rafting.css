@@ -1,598 +1,178 @@
- //* =========================================
- VARIÁVEIS CSS=========================================*/:root {
-     --cor-primaria: #1f5f7a;
-     --cor-secundaria: #055a05;
-     --cor-texto: #264653;
-     --cor-clara: #ffffff;
-     --cor-fundo: #f4f4f4;
-     --cor-destaque: #e9c46a;
-
-     --cor-tabela: #872f2f;
-     --cor-celula: #b8c0cc;
-     --cor-botao-agende: #75a9cf;
-
-     --fonte-titulo: Georgia, "Times New Roman", serif;
-     --fonte-texto: Arial, Helvetica, sans-serif;
- }
-
- /* =========================================
-   RESET UNIVERSAL
-========================================= */
-
- * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
-
- /* =========================================
-   BODY
-========================================= */
-
- body {
-     font-family: var(--fonte-texto);
-     color: var(--cor-texto);
-     line-height: 1.6;
-     background-color: var(--cor-clara);
- }
-
- /* =========================================
-   ELEMENTOS GERAIS
-========================================= */
-
- img {
-     display: block;
-     max-width: 100%;
-     height: auto;
- }
-
- h1,
- h2,
- h3 {
-     font-family: var(--fonte-titulo);
- }
-
- /* =========================================
-   HEADER
-========================================= */
-
- header {
-     width: 840px;
-     margin: 0 auto;
-     padding: 15px 30px;
-
-     display: grid;
-     grid-template-columns: 150px 1fr;
-     align-items: center;
-
-     background-color: var(--cor-primaria);
-     color: var(--cor-clara);
- }
-
- /* =========================================
-   LOGO
-========================================= */
-
- header > img {
-     width: 100px;
-     height: 100px;
-
-     object-fit: cover;
-
-     border-radius: 5px;
- }
-
- /* =========================================
-   NAVEGAÇÃO
-========================================= */
-
- header nav {
-     display: flex;
-     justify-content: flex-end;
-     align-items: center;
-
-     gap: 15px;
- }
-
- header nav a {
-     padding: 8px 12px;
-
-     color: var(--cor-clara);
-
-     text-decoration: none;
-
-     font-weight: bold;
-
-     border-radius: 4px;
- }
-
- header nav a:hover {
-     background-color: var(--cor-clara);
-
-     color: var(--cor-primaria);
- }
-
- /* =========================================
-   FOCO PARA ACESSIBILIDADE
-========================================= */
-
- a:focus,
- button:focus,
- input:focus,
- textarea:focus {
-     outline: 3px solid var(--cor-destaque);
-     outline-offset: 3px;
- }
-
- /* =========================================
-   MAIN
-========================================= */
-
- main {
-     width: 840px;
-
-     margin: 0 auto;
- }
-
- /* =========================================
-   INTRODUÇÃO DA PÁGINA DE PASSEIOS
-========================================= */
-
- .passeios-intro {
-     margin: 30px 0;
-
-     padding: 20px;
-
-     text-align: center;
- }
-
- .passeios-intro h1 {
-     margin-bottom: 15px;
-
-     color: var(--cor-secundaria);
-
-     font-size: 2.5rem;
- }
-
- .passeios-intro p {
-     max-width: 700px;
-
-     margin: 0 auto 25px;
-
-     font-size: 1.05rem;
- }
-
- .passeios-intro > img {
-     width: 100%;
-
-     max-height: 400px;
-
-     object-fit: cover;
-
-     border-radius: 8px;
- }
-
- /* =========================================
-   SEÇÃO DOS PASSEIOS
-========================================= */
-
- .passeios {
-     margin: 40px 0;
- }
-
- .passeios > h2 {
-     margin-bottom: 30px;
-
-     text-align: center;
-
-     color: var(--cor-secundaria);
- }
-
- /* =========================================
-   GRID DOS PASSEIOS
-========================================= */
-
- .passeios-grid {
-     display: grid;
-
-     grid-template-columns: repeat(3, 1fr);
-
-     gap: 25px;
- }
-
- /* =========================================
-   CARDS
-========================================= */
-
- .passeio-card {
-     padding: 18px;
-
-     background-color: var(--cor-fundo);
-
-     border-radius: 8px;
- }
-
- .passeio-card h3 {
-     margin-bottom: 15px;
-
-     text-align: center;
-
-     color: var(--cor-primaria);
-
-     font-size: 1.3rem;
- }
-
- .passeio-card p {
-     margin-bottom: 14px;
-
-     text-align: left;
- }
-
- /* =========================================
-   IMAGENS DOS PASSEIOS
-========================================= */
-
- .passeio-imagens {
-     display: grid;
-
-     grid-template-columns: 1fr;
-
-     gap: 10px;
-
-     margin-bottom: 15px;
- }
-
- .passeio-imagens img {
-     width: 100%;
-
-     height: 170px;
-
-     object-fit: cover;
-
-     border-radius: 6px;
- }
-
- /* =========================================
-   TABELA DE VALORES
-========================================= */
-
- .tabela-valores {
-     margin: 50px 0;
-
-     padding: 40px 30px;
-
-     text-align: center;
-
-     background-color: var(--cor-tabela);
-
-     border-radius: 8px;
- }
-
- .tabela-valores h2 {
-     margin-bottom: 10px;
-
-     color: var(--cor-clara);
-
-     font-size: 2.5rem;
- }
-
- .tabela-valores > p {
-     max-width: 650px;
-
-     margin: 0 auto 25px;
-
-     color: var(--cor-clara);
- }
-
- /* =========================================
-   CONTAINER DA TABELA
-========================================= */
-
- .tabela-container {
-     width: 100%;
-
-     margin-bottom: 30px;
-
-     overflow-x: auto;
- }
-
- /* =========================================
-   TABLE
-========================================= */
-
- .tabela-valores table {
-     width: 100%;
-
-     border-collapse: separate;
-
-     border-spacing: 0 12px;
-
-     background-color: transparent;
- }
-
- /* =========================================
-   CAPTION
-========================================= */
-
- .tabela-valores caption {
-     margin-bottom: 15px;
-
-     color: var(--cor-clara);
-
-     font-weight: bold;
-
-     font-size: 1rem;
- }
-
- /* =========================================
-   CABEÇALHO DA TABELA
-========================================= */
-
- .tabela-valores th {
-     padding: 12px;
-
-     background-color: var(--cor-clara);
-
-     color: var(--cor-texto);
-
-     text-align: center;
-
-     font-weight: bold;
- }
-
- /* =========================================
-   CÉLULAS DA TABELA
-========================================= */
-
- .tabela-valores td {
-     padding: 20px 12px;
-
-     background-color: var(--cor-celula);
-
-     color: #000000;
-
-     text-align: center;
- }
-
- /* =========================================
-   ARREDONDAMENTO DA TABELA
-========================================= */
-
- .tabela-valores th:first-child,
- .tabela-valores td:first-child {
-     border-radius: 6px 0 0 6px;
- }
-
- .tabela-valores th:last-child,
- .tabela-valores td:last-child {
-     border-radius: 0 6px 6px 0;
- }
-
- /* =========================================
-   DESTAQUE DOS PREÇOS
-========================================= */
-
- .tabela-valores tbody td:last-child {
-     font-weight: bold;
-
-     font-size: 1.05rem;
- }
-
- /* =========================================
-   BOTÃO AGENDE
-========================================= */
-
- .botao-agende {
-     display: inline-block;
-
-     padding: 12px 25px;
-
-     background-color: var(--cor-botao-agende);
-
-     color: var(--cor-clara);
-
-     text-decoration: none;
-
-     text-transform: uppercase;
-
-     font-weight: bold;
-
-     border-radius: 25px;
- }
-
- .botao-agende:hover {
-     background-color: var(--cor-clara);
-
-     color: var(--cor-tabela);
- }
-
- /* =========================================
-   CHAMADA PARA CONTATO
-========================================= */
-
- .chamada-contato {
-     margin: 50px 0;
-
-     padding: 40px 30px;
-
-     text-align: center;
-
-     background-color: var(--cor-primaria);
-
-     color: var(--cor-clara);
-
-     border-radius: 8px;
- }
-
- .chamada-contato h2 {
-     margin-bottom: 15px;
-
-     color: var(--cor-clara);
- }
-
- .chamada-contato p {
-     max-width: 650px;
-
-     margin: 0 auto 15px;
- }
-
- .chamada-contato p:last-of-type {
-     margin-bottom: 25px;
- }
-
- /* =========================================
-   BOTÃO DE CONTATO
-========================================= */
-
- .botao-contato {
-     display: inline-block;
-
-     padding: 12px 24px;
-
-     background-color: var(--cor-secundaria);
-
-     color: var(--cor-clara);
-
-     text-decoration: none;
-
-     font-weight: bold;
-
-     border-radius: 5px;
- }
-
- .botao-contato:hover {
-     background-color: var(--cor-destaque);
-
-     color: var(--cor-texto);
- }
-
- /* =========================================
-   FOOTER
-========================================= */
-
- footer {
-     width: 840px;
-
-     margin: 30px auto 0;
-
-     padding: 20px;
-
-     display: flex;
-
-     justify-content: space-between;
-
-     align-items: center;
-
-     gap: 20px;
-
-     background-color: var(--cor-primaria);
-
-     color: var(--cor-clara);
- }
-
- footer p {
-     color: var(--cor-clara);
- }
-
- /* =========================================
-   REDES SOCIAIS
-========================================= */
-
- .socialmedia {
-     display: flex;
-
-     align-items: center;
-
-     gap: 15px;
- }
-
- .socialmedia a {
-     display: block;
-
-     text-decoration: none;
- }
-
- .socialmedia img {
-     width: 40px;
-
-     height: 40px;
-
-     object-fit: cover;
-
-     border-radius: 4px;
- }
-
- /* =========================================
-   RESPONSIVIDADE - TABLET
-========================================= */
-
- @media (max-width: 900px) {
-
-     header,
-     main,
-     footer {
-         width: 95%;
-     }
-
-     header {
-         grid-template-columns: 120px 1fr;
-     }
-
-     .passeios-grid {
-         grid-template-columns: 1fr;
-     }
-
-     .passeio-card {
-         max-width: 600px;
-
-         margin: 0 auto;
-     }
-
- }
-
- /* =========================================
-   RESPONSIVIDADE - CELULAR
-========================================= */
-
- @media (max-width: 650px) {
-
-     header {
-         display: flex;
-
-         flex-direction: column;
-
-         gap: 20px;
-     }
-
-     header nav {
-         flex-direction: column;
-
-         gap: 5px;
-     }
-
-     .passeios-intro h1 {
-         font-size: 2rem;
-     }
-
-     .tabela-valores {
-         padding: 30px 15px;
-     }
-
-     .tabela-valores h2 {
-         font-size: 2rem;
-     }
-
-     .tabela-valores th,
-     .tabela-valores td {
-         padding: 12px 8px;
-
-         font-size: 0.9rem;
-     }
-
-     footer {
-         flex-direction: column;
-
-         text-align: center;
-     }
-
- }
+/* ==========================================================================
+   1. RESET UNIVERSAL (Zerar propriedades do Box-Model)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. REGRAS DE LAYOUT E ESTRUTURA
+   ========================================================================== */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Limita a largura e centraliza o conteúdo principal */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   3. ESTILIZAÇÃO DE ELEMENTOS GERAIS
+   ========================================================================== */
+/* Header */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
+    padding: 20px;
+}
+
+/* Títulos */
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--cor-destaque1);
+    color: #fff;
+    font-family: var(--fonte-titulo);
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Espaçamento interno e externo de blocos de conteúdo */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Links das redes sociais no footer */
+.redes-sociais a {
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   4. ELEMENTO HERO (Seção de Destaque)
+   ========================================================================== */
+.hero {
+    position: relative;
+}
+
+/* Imagem de fundo do Hero */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Imagem específica dentro do article do hero */
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+/* ==========================================================================
+   5. CLASSE .TABELA-VALORES
+   ========================================================================== */
+.tabela-valores {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabeçalho interno da tabela */
+.tabela-valores th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-titulo);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 18px;
+    text-align: left;
+}
+
+/* Células de dados */
+.tabela-valores td {
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(26, 43, 51, 0.1);
+}
+
+/* Efeito Zebra */
+.tabela-valores tr:nth-child(even) {
+    background-color: rgba(244, 162, 97, 0.06);
+}
+
+/* Efeito Hover */
+.tabela-valores tr:hover {
+    background-color: rgba(244, 162, 97, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+/* ==========================================================================
+   6. BARRA DE NAVEGAÇÃO SUPERIOR (Header e Menu)
+   ========================================================================== */
+
+/* Organiza o logo e o menu lado a lado em uma linha */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--cor-primaria);
+}
+
+/* Controla o tamanho do logotipo para não quebrar o layout */
+header > img {
+    height: 60px;
+    /* Ajuste a altura conforme o tamanho real do seu logo */
+    width: auto;
+    display: block;
+}
+
+/* Garante que os links fiquem alinhados horizontalmente */
+header nav {
+    display: flex;
+    gap: 20px;
+    /* Espaçamento entre os links */
+    margin: 0;
+    /* Remove a margem genérica de 16px definida anteriormente para nav */
+    padding: 0;
+}
+
+/* Estilização dos links do menu */
+header nav a {
+    text-decoration: none;
+    font-family: var(--fonte-body);
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    /* Bege médio para contraste com o fundo verde */
+    transition: color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos links */
+header nav a:hover {
+    color: var(--cor-destaque2);
+    /* Muda para o amarelo dourado no hover */
+}
